@@ -6,7 +6,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 public class ValidationPage extends PageObject {
 
-    @FindBy(xpath = "//div[@class='product_label']")
+    @FindBy(css = "[data-test='title']")
     protected WebElementFacade lbl_product;
 
     @FindBy(css = "h3[data-test='error']")
