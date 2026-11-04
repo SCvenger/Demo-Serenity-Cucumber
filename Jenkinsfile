@@ -1,6 +1,10 @@
 pipeline {
     agent any
-
+    
+    tools {
+        jdk 'JDK 25'
+        maven 'Maven 3.10.0'
+    }
     stages {
         stage('Checkout') {
             steps {
